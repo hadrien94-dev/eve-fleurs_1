@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eve Casalta — L'Atelier des Fleurs · Fleuriste d'art · Le Vésinet (78)</title>
-<meta name="description" content="Fleuriste d'art au Vésinet. Bouquets de saison, compositions événements & mariages, hôtellerie de luxe. 4 Rue Thiers, 78110 Le Vésinet · 01 30 53 67 61.">
+<title>Eve Fleurs — Fleuriste · Le Perreux-sur-Marne</title>
+<meta name="description" content="Fleuriste au Perreux-sur-Marne. Roses fraîches, bouquets sur-mesure, mariages et service aux professionnels. 126 Av. du Général de Gaulle · 01 43 24 21 64.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -13,15 +13,15 @@
   --bg: #f7f4f0;
   --bg-card: #ffffff;
   --bg-warm: #f0ece5;
-  --primary: #3b5240;
-  --primary-light: #567a5e;
+  --primary: #2C4C3B;
+  --primary-light: #3A634D;
   --gold: #b08d57;
   --gold-light: #d4b07a;
-  --ink: #1e2820;
-  --ink-dim: #3d4f42;
+  --ink: #1A1D1A;
+  --ink-dim: #4A524C;
   --muted: #6e7d72;
-  --border: rgba(59,82,64,0.12);
-  --border-fine: rgba(59,82,64,0.07);
+  --border: rgba(44,76,59,0.12);
+  --border-fine: rgba(44,76,59,0.07);
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'DM Sans', sans-serif;
   --ease: 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -61,7 +61,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
   color: var(--ink);
   letter-spacing: 0.03em;
 }
-.nav-logo span { color: var(--primary); font-style: italic; }
+.nav-logo span { color: var(--primary); font-style: italic; font-weight: 600;}
 
 .nav-links {
   display: flex; align-items: center; gap: 2rem;
@@ -76,12 +76,12 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 .nav-tel {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.55rem 1.3rem;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  border: 1px solid var(--primary);
+  color: var(--primary);
   font-size: 0.74rem; font-weight: 500; letter-spacing: 0.09em;
   text-transform: uppercase; transition: var(--ease);
 }
-.nav-tel:hover { background: var(--gold); color: #fff; }
+.nav-tel:hover { background: var(--primary); color: #fff; }
 
 /* ── HERO ── */
 .hero {
@@ -102,10 +102,10 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 0.7rem;
   font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--gold); font-weight: 500;
+  color: var(--primary); font-weight: 500;
 }
 .hero-eyebrow::before {
-  content: ''; display: block; width: 28px; height: 1px; background: var(--gold-light);
+  content: ''; display: block; width: 28px; height: 1px; background: var(--primary-light);
 }
 .hero-title {
   font-family: var(--font-display);
@@ -116,7 +116,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 .hero-title em { font-style: italic; color: var(--primary); }
 .hero-body {
   font-size: 0.92rem; line-height: 1.85;
-  color: var(--muted); max-width: 400px;
+  color: var(--muted); max-width: 440px;
 }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.3rem; }
 
@@ -163,7 +163,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 }
 .hero-frame-border {
   position: absolute; inset: 14px;
-  border: 1px solid rgba(176,141,87,0.35); z-index: 2; pointer-events: none;
+  border: 1px solid rgba(44,76,59,0.35); z-index: 2; pointer-events: none;
 }
 .hero-tag {
   position: absolute; bottom: 2rem; left: -1.5rem;
@@ -187,7 +187,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 .gallery-section .section-tag {
   text-align: center;
   font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 0.6rem;
+  color: var(--primary); margin-bottom: 0.6rem;
 }
 .gallery-section .section-title {
   text-align: center;
@@ -276,7 +276,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
   position: relative;
 }
 .events-section::before {
-  content: 'Événements';
+  content: 'Services';
   position: absolute; right: -2rem; bottom: -1rem;
   font-family: var(--font-display);
   font-size: 12rem; font-weight: 300;
@@ -405,7 +405,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 .review-quote {
   position: absolute; top: 1rem; right: 1.5rem;
   font-family: var(--font-display); font-size: 3.5rem;
-  color: var(--gold-light); opacity: 0.25; line-height: 1;
+  color: var(--primary); opacity: 0.1; line-height: 1;
   pointer-events: none;
 }
 .review-stars { color: var(--gold); font-size: 0.72rem; letter-spacing: 0.1em; margin-bottom: 0.8rem; }
@@ -432,7 +432,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 .info-detail { display: flex; flex-direction: column; gap: 0.3rem; }
 .info-detail-label {
   font-size: 0.67rem; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--gold); font-weight: 500;
+  color: var(--primary); font-weight: 500;
 }
 .info-detail-value { font-size: 0.9rem; color: var(--ink-dim); line-height: 1.65; }
 .info-detail-sub { font-size: 0.78rem; color: var(--muted); font-style: italic; }
@@ -486,7 +486,7 @@ footer {
 /* ── section shared ── */
 .section-tag {
   font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 0.6rem;
+  color: var(--primary); margin-bottom: 0.6rem;
 }
 .section-title {
   font-family: var(--font-display);
@@ -541,34 +541,33 @@ footer {
 <body>
 
 <nav id="mainNav">
-  <a href="#" class="nav-logo">Eve Casalta — <span>L'Atelier des Fleurs</span></a>
+  <a href="#" class="nav-logo">Eve Fleurs</a>
   <ul class="nav-links">
     <li><a href="#galerie">Galerie</a></li>
     <li><a href="#saison">Saison</a></li>
-    <li><a href="#evenements">Événements</a></li>
+    <li><a href="#evenements">Services</a></li>
     <li><a href="#boutique">Boutique</a></li>
     <li><a href="#avis">Avis</a></li>
   </ul>
-  <a href="tel:0130536761" class="nav-tel">01 30 53 67 61</a>
+  <a href="tel:0143242164" class="nav-tel">01 43 24 21 64</a>
 </nav>
 
 <main>
 
-  <!-- ── HERO ── -->
   <section class="hero" id="accueil">
     <div class="hero-left">
-      <div class="hero-eyebrow">Fleuriste d'art · Le Vésinet</div>
+      <div class="hero-eyebrow">Le Perreux-sur-Marne · Val-de-Marne</div>
       <h1 class="hero-title">
-        L'art floral,<br>
-        <em>au fil des saisons</em>
+        Vos fleurs,<br>
+        <em>en toute confiance</em>
       </h1>
       <p class="hero-body">
-        Fleuriste d'art reconnue, Ève Casalta compose depuis des années pour l'hôtellerie de luxe, les particuliers et les grandes maisons de la mode. Un jardin parfumé où fleurissent, au gré des saisons, des fleurs et plantes rares.
+        Depuis plus de quarante ans, Eve Fleurs accompagne les grands comme les petits moments de la vie : des roses choisies avec soin, des bouquets frais et des conseils sincères, sans jamais vous vendre plus que nécessaire.
       </p>
       <div class="hero-actions">
         <a href="#evenements" class="btn-primary">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
-          Réserver un événement
+          Commander
         </a>
         <a href="#galerie" class="btn-ghost">
           Voir nos créations
@@ -578,54 +577,52 @@ footer {
     </div>
     <div class="hero-right">
       <div class="hero-img-frame">
-        <img src="bouquet2.jpg"
-             alt="Créations florales — Ève Casalta L'Atelier des Fleurs, Le Vésinet"
+        <img src="EF_4.jpg"
+             alt="Roses et créations florales en vitrine"
              loading="eager">
       </div>
       <div class="hero-frame-border"></div>
       <div class="hero-tag">
-        <strong>4,8 / 5</strong>
-        <span>★★★★★ · 26 avis Google</span>
+        <strong>4,6 / 5</strong>
+        <span>★★★★★ · 34 avis Google</span>
       </div>
     </div>
   </section>
 
-  <!-- ── GALERIE ── -->
   <section class="gallery-section" id="galerie">
     <div class="section-tag">Galerie</div>
-    <h2 class="section-title">Des <em>créations</em> uniques</h2>
-    <p class="gallery-section .section-subtitle">Bouquets de saison, compositions de mariage, décors d'hôtel — chaque création est façonnée à la main dans notre atelier.</p>
+    <h2 class="section-title">Nos <em>Créations</em></h2>
+    <p class="gallery-section .section-subtitle">Roses, bouquets de saison, compositions de mariage ou de cérémonie : découvrez le savoir-faire d'Eve Fleurs.</p>
 
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="bouquet3.jpg" alt="Bouquet de mariée — Ève Casalta">
-        <div class="gallery-label">Bouquet de mariée</div>
+        <img src="EF_9.jpg" alt="Composition florale et roses">
+        <div class="gallery-label">Création sur-mesure</div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1464347744102-11db6282f854?w=600&q=80" alt="Fleurs de saison">
-        <div class="gallery-label">Fleurs de saison</div>
+        <img src="EF_2.jpg" alt="Composition douce">
+        <div class="gallery-label">Douceur et élégance</div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=600&q=80" alt="Composition de table">
-        <div class="gallery-label">Composition de table</div>
+        <img src="EF_3.jpg" alt="Fleurs variées">
+        <div class="gallery-label">Fleurs fraîches</div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=600&q=80" alt="Bouquet champêtre">
-        <div class="gallery-label">Bouquet champêtre</div>
+        <img src="EF_5.png" alt="Bouquet rose">
+        <div class="gallery-label">Bouquet de saison</div>
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?w=600&q=80" alt="Décor floral événement">
-        <div class="gallery-label">Décor événement</div>
+        <img src="EF_6.png" alt="Bouquet roses et lys">
+        <div class="gallery-label">Roses & Lys</div>
       </div>
     </div>
   </section>
 
-  <!-- ── SAISON ── -->
   <section class="saison-section" id="saison">
     <div class="saison-inner">
       <div class="saison-image">
         <div class="saison-img-wrap">
-          <img src="https://images.unsplash.com/photo-1530092285049-1c42085fd395?w=700&q=80" alt="Fleurs de saison — Ève Casalta">
+          <img src="https://images.unsplash.com/photo-1530092285049-1c42085fd395?w=700&q=80" alt="Fleurs de saison — Eve Fleurs">
         </div>
         <div class="saison-badge">
           <strong>Été</strong>
@@ -634,81 +631,54 @@ footer {
       </div>
       <div class="saison-content">
         <div>
-          <div class="section-tag">Fleurs de Saison</div>
-          <h2 class="section-title">Ce que la <em>nature offre</em> en ce moment</h2>
-          <p class="section-sub">Nos arrivages changent chaque semaine selon la floraison locale et notre sélection italienne. Des espèces que l'on ne voit pas partout.</p>
+          <div class="section-tag">Fraîcheur du moment</div>
+          <h2 class="section-title">L'arrivage <em>de la semaine</em></h2>
+          <p class="section-sub">Chaque jour, nous sélectionnons les plus belles fleurs pour vous offrir une qualité irréprochable et un assortiment renouvelé.</p>
         </div>
         <ul class="season-list">
           <li>
             <div class="season-dot"></div>
             <div>
-              <h4>Pivoines &amp; Renoncules</h4>
-              <p>Généreuses et odorantes, idéales pour les bouquets de mariée et les grandes compositions de table.</p>
+              <h4>Roses fraîches</h4>
+              <p>Notre spécialité historique : des roses sélectionnées chaque jour avec rigueur pour une fraîcheur et une tenue exceptionnelles.</p>
             </div>
           </li>
           <li>
             <div class="season-dot"></div>
             <div>
-              <h4>Dahlias de jardin</h4>
-              <p>Cueillies chaque matin, ces variétés rares apportent texture et profondeur à nos créations.</p>
-            </div>
-          </li>
-          <li>
-            <div class="season-dot"></div>
-            <div>
-              <h4>Orchidées &amp; Plantes rares</h4>
-              <p>Une sélection soignée de plantes d'intérieur et de vases pour sublimer vos intérieurs.</p>
-            </div>
-          </li>
-          <li>
-            <div class="season-dot"></div>
-            <div>
-              <h4>Roses de production italienne</h4>
-              <p>Pour enrichir l'offre : des roses d'exception, longue durée, aux coloris introuvables ailleurs.</p>
+              <h4>Fleurs de saison & Plantes d'intérieur</h4>
+              <p>Des bouquets composés selon les arrivages et une sélection de plantes vertes et fleuries pour la maison ou le bureau.</p>
             </div>
           </li>
         </ul>
-        <a href="tel:0130536761" class="btn-primary" style="width:fit-content;">
-          Renseignements · 01 30 53 67 61
+        <a href="tel:0143242164" class="btn-primary" style="width:fit-content;">
+          Renseignements · 01 43 24 21 64
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ── ÉVÉNEMENTS ── -->
   <section class="events-section" id="evenements">
     <div class="events-inner">
       <div class="events-header">
-        <div class="events-tag">Événements &amp; Mariages</div>
-        <h2 class="events-title">Pour vos <em>plus beaux instants</em></h2>
+        <div class="events-tag">Événements & Services</div>
+        <h2 class="events-title">Pour <em>tous vos moments</em></h2>
         <p class="events-body">
-          Depuis de nombreuses années, Ève Casalta compose pour l'hôtellerie de luxe, les particuliers et les grandes maisons de la mode. Chaque mariage, chaque événement professionnel est traité avec la même exigence.
+          Qu'il s'agisse d'un mariage, d'une cérémonie de deuil ou d'un aménagement floral pour des professionnels, Eve Fleurs s'engage à vous accompagner avec écoute et sincérité.
         </p>
         <ul class="events-list">
-          <li>Bouquets de mariée sur-mesure &amp; boutonnières</li>
-          <li>Décoration de salle &amp; arches florales</li>
-          <li>Hôtellerie de luxe &amp; grands établissements</li>
-          <li>Tournages de films, défilés de mode</li>
-          <li>Réceptions &amp; séminaires professionnels</li>
-          <li>Forfaits floraux pour hôtels &amp; restaurants</li>
+          <li>Bouquets de mariée, cérémonies et couronnes de deuil sur-mesure</li>
+          <li>Service aux professionnels : conception et installation de plantes</li>
         </ul>
-        <a href="tel:0130536761" class="btn-light">
+        <a href="tel:0143242164" class="btn-light">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.86 19.79 19.79 0 01.12 1.22 2 2 0 012.1 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
           Appeler pour un projet
         </a>
       </div>
 
-      <!--
-        CORRECTIONS FORMULAIRE :
-        1. <form> remplacé par <div> + soumission 100% JS (évite tout rechargement natif)
-        2. access_key + botcheck passés en champs hidden dans un FormData construit manuellement
-        3. select : option vide sans "disabled" (validation JS custom à la place)
-        4. Feedback unifié success/error via .form-feedback (plus de .success-msg épars)
-        5. Bouton re-activé en cas d'erreur réseau / API
-      -->
       <div class="events-form" id="eventForm">
-        <h3 class="form-title">Demande de devis</h3>
-        <p class="form-sub">Pour un mariage, une réception ou un projet professionnel, décrivez-nous votre projet.</p>
+        <h3 class="form-title">Demande de commande / devis</h3>
+        <p class="form-sub">Décrivez-nous votre besoin, nous vous confirmons la disponibilité par téléphone.</p>
 
         <div class="form-row">
           <div>
@@ -722,79 +692,75 @@ footer {
         </div>
 
         <div>
-          <label class="field-label" for="e-type">Type d'événement</label>
+          <label class="field-label" for="e-type">Sujet de la demande</label>
           <select class="field-select" id="e-type">
             <option value="">Choisir…</option>
+            <option value="commande">Commande de bouquet</option>
             <option value="mariage">Mariage</option>
-            <option value="anniversaire">Anniversaire / Réception privée</option>
-            <option value="entreprise">Événement entreprise / Séminaire</option>
-            <option value="hotel">Hôtel / Restaurant (abonnement)</option>
-            <option value="tournage">Tournage / Mode</option>
-            <option value="deuil">Cérémonie funèbre / Hommage</option>
-            <option value="autre">Autre projet</option>
+            <option value="deuil">Cérémonie / Deuil</option>
+            <option value="pro">Plantes & Professionnels</option>
+            <option value="autre">Autre demande</option>
           </select>
         </div>
 
         <div>
-          <label class="field-label" for="e-date">Date de l'événement</label>
+          <label class="field-label" for="e-date">Date souhaitée</label>
           <input class="field-input" type="date" id="e-date">
         </div>
 
         <div>
-          <label class="field-label" for="e-message">Décrivez votre projet</label>
-          <input class="field-input" type="text" id="e-message" placeholder="Lieu, nombre de convives, couleurs souhaitées, budget…">
+          <label class="field-label" for="e-message">Notes et détails</label>
+          <input class="field-input" type="text" id="e-message" placeholder="Couleurs souhaitées, budget, occasion…">
         </div>
 
         <button type="button" class="form-submit-events" id="eventSubmitBtn" onclick="handleEventSubmit()">
-          Envoyer ma demande de devis
+          Envoyer ma demande
         </button>
         <div class="form-feedback" id="eventFeedback"></div>
-        <p class="form-note-events">Réponse personnalisée sous 24h · Prise en charge sur-mesure</p>
+        <p class="form-note-events">Réponse rapide · Conseil sincère et adapté</p>
       </div>
     </div>
   </section>
 
-  <!-- ── AVIS ── -->
   <section class="reviews-section" id="avis">
     <div class="reviews-inner">
       <div class="reviews-header">
         <div class="section-tag" style="text-align:center;">Avis clients</div>
-        <h2 class="section-title" style="text-align:center;">Ce que disent <em>nos clients</em></h2>
+        <h2 class="section-title" style="text-align:center;">Ils nous font <em>confiance</em></h2>
       </div>
       <div class="reviews-score">
-        <div class="score-number">4,8<sup>/5</sup></div>
+        <div class="score-number">4,6<sup>/5</sup></div>
         <div>
           <div class="score-stars">★ ★ ★ ★ ★</div>
-          <div class="score-label">26 avis certifiés Google<br>L'Atelier des Fleurs · Le Vésinet</div>
+          <div class="score-label">34 avis certifiés Google<br>Eve Fleurs · Le Perreux-sur-Marne</div>
         </div>
       </div>
       <div class="reviews-grid">
         <div class="review-card">
           <div class="review-quote">"</div>
           <div class="review-stars">★ ★ ★ ★ ★</div>
-          <p class="review-text">Les conseillères sont professionnelles et accueillantes, un large choix avec des fleurs fraîches. Je recommande sans hésitation si vous souhaitez de beaux bouquets ou de belles plantes en pot.</p>
-          <div class="review-author">Kelly A.</div>
-          <div class="review-date">Décembre 2024 · Google</div>
+          <p class="review-text">Très bon fleuriste, accueillant et de très bon conseil. Il répond au mieux à vos attentes sans tenter de vous vendre plus que besoin. Il m'a trouvé de magnifiques roses pour l'anniversaire de ma mère.</p>
+          <div class="review-author">Aline Séville</div>
+          <div class="review-date">Google</div>
         </div>
         <div class="review-card">
           <div class="review-quote">"</div>
           <div class="review-stars">★ ★ ★ ★ ★</div>
-          <p class="review-text">J'ai fait appel à Ève pour mon bouquet de mariée. Des fleurs que l'on ne voit pas partout : magnifiques, odorantes, et qui tiennent dans le temps. Un accompagnement parfait du début à la fin.</p>
-          <div class="review-author">Marina</div>
-          <div class="review-date">Octobre 2024 · Google</div>
+          <p class="review-text">Le Momo, c'est le super fleuriste du Perreux : il vendait déjà des fleurs sur un étal au marché de Chelles il y a 40 ans, avant d'ouvrir sa boutique. Quel accueil !</p>
+          <div class="review-author">SEB Venissieux</div>
+          <div class="review-date">Google</div>
         </div>
         <div class="review-card">
           <div class="review-quote">"</div>
           <div class="review-stars">★ ★ ★ ★ ★</div>
-          <p class="review-text">Ravie de l'accueil téléphonique — livraison très rapide et bouquet magnifique. Je recommande vivement cette fleuriste qui aime visiblement son métier et sa clientèle.</p>
-          <div class="review-author">S. M.</div>
-          <div class="review-date">Octobre 2024 · Google</div>
+          <p class="review-text">De très belles fleurs, toujours bien conseillée par le patron. Un incontournable si vous voulez de belles fleurs qui durent.</p>
+          <div class="review-author">Chris C</div>
+          <div class="review-date">Google</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── INFOS BOUTIQUE ── -->
   <section class="info-section" id="boutique">
     <div style="max-width:1100px;margin:0 auto;margin-bottom:3.5rem;">
       <div class="section-tag">Boutique</div>
@@ -804,37 +770,33 @@ footer {
       <div class="info-left">
         <div class="info-detail">
           <span class="info-detail-label">Adresse</span>
-          <span class="info-detail-value">4 Rue Thiers<br>78110 Le Vésinet</span>
-          <span class="info-detail-sub">Yvelines · Île-de-France</span>
+          <span class="info-detail-value">126 Av. du Général de Gaulle<br>94170 Le Perreux-sur-Marne</span>
+          <span class="info-detail-sub">Val-de-Marne · Île-de-France</span>
         </div>
         <div class="info-detail">
           <span class="info-detail-label">Horaires d'ouverture</span>
           <table class="hours-table">
             <tr class="fermee"><td>Lundi</td><td>Fermé</td></tr>
-            <tr><td>Mardi</td><td>09h30 – 19h30</td></tr>
-            <tr><td>Mercredi</td><td>09h30 – 19h30</td></tr>
-            <tr><td>Jeudi</td><td>09h30 – 19h30</td></tr>
-            <tr><td>Vendredi</td><td>09h30 – 19h30</td></tr>
-            <tr><td>Samedi</td><td>08h30 – 19h30</td></tr>
-            <tr><td>Dimanche</td><td>09h30 – 13h00</td></tr>
+            <tr><td>Mardi</td><td>09h00 – 13h00 / 15h00 – 19h30</td></tr>
+            <tr><td>Mercredi</td><td>09h00 – 13h00 / 15h00 – 19h30</td></tr>
+            <tr><td>Jeudi</td><td>09h00 – 13h00 / 15h00 – 19h30</td></tr>
+            <tr><td>Vendredi</td><td>09h00 – 13h00 / 15h00 – 19h30</td></tr>
+            <tr><td>Samedi</td><td>09h00 – 13h00 / 15h00 – 19h30</td></tr>
+            <tr><td>Dimanche</td><td>09h00 – 13h30</td></tr>
           </table>
         </div>
         <div class="info-detail">
           <span class="info-detail-label">Livraison</span>
-          <span class="info-detail-value">Livraison à domicile disponible</span>
-          <span class="info-detail-sub">Renseignez-vous par téléphone pour les délais et zones</span>
+          <span class="info-detail-value">Livraison disponible</span>
+          <span class="info-detail-sub">Renseignez-vous par téléphone pour les délais au Perreux et environs</span>
         </div>
-        <a href="tel:0130536761" class="tel-link">
+        <a href="tel:0143242164" class="tel-link">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.86 19.79 19.79 0 01.12 1.22 2 2 0 012.1 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          01 30 53 67 61
+          01 43 24 21 64
         </a>
       </div>
       <div class="map-wrap">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.7!2d2.5016928!3d48.8426729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60d9cd3af97bf%3A0x1dc11622a6ff42ab!2sEve%20Fleurs!5e0!3m2!1sfr!2sfr!4v1700000000000"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Localisation — Ève Casalta L'Atelier des Fleurs, 4 Rue Thiers, Le Vésinet">
-        </iframe>
+        <img src="EF_7.jpg" alt="Intérieur boutique Eve Fleurs" style="width:100%; height:100%; object-fit:cover;">
       </div>
     </div>
   </section>
@@ -842,10 +804,10 @@ footer {
 </main>
 
 <footer>
-  <span class="footer-brand">Ève Casalta — <em>L'Atelier des Fleurs</em></span>
-  <span class="footer-copy">© 2026 · 4 Rue Thiers, 78110 Le Vésinet</span>
+  <span class="footer-brand">Eve Fleurs — <em>Artisan Fleuriste</em></span>
+  <span class="footer-copy">© 2026 · 126 Av. du Général de Gaulle, 94170 Le Perreux-sur-Marne</span>
   <div class="footer-links">
-    <a href="tel:0130536761">01 30 53 67 61</a>
+    <a href="tel:0143242164">01 43 24 21 64</a>
     <a href="#">Mentions légales</a>
   </div>
 </footer>
@@ -866,7 +828,6 @@ footer {
 })();
 
 function handleEventSubmit() {
-  // Récupération des valeurs
   var nom     = document.getElementById('e-nom').value.trim();
   var tel     = document.getElementById('e-tel').value.trim();
   var type    = document.getElementById('e-type').value;
@@ -876,26 +837,23 @@ function handleEventSubmit() {
   var btn      = document.getElementById('eventSubmitBtn');
   var feedback = document.getElementById('eventFeedback');
 
-  // Validation simple côté client
-  if (!nom || !tel || !type || !date) {
-    showFeedback('error', '⚠ Veuillez remplir les champs obligatoires : nom, téléphone, type d\'événement et date.');
+  if (!nom || !tel || !type) {
+    showFeedback('error', '⚠ Veuillez remplir les champs obligatoires : nom, téléphone et sujet.');
     return;
   }
 
-  // État chargement
   btn.disabled = true;
   btn.textContent = 'Envoi en cours…';
   feedback.style.display = 'none';
 
-  // Construction du FormData manuellement (évite tout problème lié à <form>)
   var formData = new FormData();
   formData.append('access_key', 'd30faa67-b86f-4cb9-890b-c2167e1726ae');
-  formData.append('subject', 'Demande événement — Ève Casalta L\'Atelier des Fleurs');
-  formData.append('botcheck', '');   // honeypot vide = humain
+  formData.append('subject', 'Nouvelle demande — Eve Fleurs');
+  formData.append('botcheck', '');
   formData.append('nom', nom);
   formData.append('tel', tel);
   formData.append('type', type);
-  formData.append('date', date);
+  if (date) formData.append('date', date);
   if (message) formData.append('message', message);
 
   fetch('https://api.web3forms.com/submit', {
@@ -909,25 +867,23 @@ function handleEventSubmit() {
   })
   .then(function(result) {
     if (result.ok && result.data.success) {
-      // Succès : masquer le bouton, vider les champs, afficher le message
       btn.style.display = 'none';
       document.getElementById('e-nom').value    = '';
       document.getElementById('e-tel').value    = '';
       document.getElementById('e-type').value   = '';
       document.getElementById('e-date').value   = '';
       document.getElementById('e-message').value = '';
-      showFeedback('success', '✓ \u00a0Votre demande a bien été transmise. Ève vous contactera dans les meilleurs délais.');
+      showFeedback('success', '✓ \u00a0Votre demande a bien été transmise. Nous vous contacterons rapidement.');
     } else {
-      // Réponse API non-OK
       btn.disabled = false;
-      btn.textContent = 'Envoyer ma demande de devis';
-      showFeedback('error', 'Une erreur s\'est produite (code ' + (result.data.message || 'inconnu') + '). Appelez-nous directement au 01\u00a030\u00a053\u00a067\u00a061.');
+      btn.textContent = 'Envoyer ma demande';
+      showFeedback('error', 'Une erreur s\'est produite. Appelez-nous directement au 01\u00a043\u00a024\u00a021\u00a064.');
     }
   })
   .catch(function() {
     btn.disabled = false;
-    btn.textContent = 'Envoyer ma demande de devis';
-    showFeedback('error', 'Erreur réseau. Vérifiez votre connexion ou appelez-nous au 01\u00a030\u00a053\u00a067\u00a061.');
+    btn.textContent = 'Envoyer ma demande';
+    showFeedback('error', 'Erreur réseau. Vérifiez votre connexion ou appelez-nous au 01\u00a043\u00a024\u00a021\u00a064.');
   });
 }
 
