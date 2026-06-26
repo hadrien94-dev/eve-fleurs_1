@@ -314,7 +314,7 @@ nav.scrolled { padding: 0.85rem 5vw; box-shadow: 0 2px 16px rgba(30,40,32,0.05);
 }
 .btn-light {
   display: inline-flex; align-items: center; gap: 0.6rem;
-  padding: 0.9rem 2rem; margin-top: 2rem;
+  padding: 0.9rem 2rem margin-top: 2rem;
   border: 1px solid rgba(255,255,255,0.4); color: #fff;
   font-size: 0.78rem; font-weight: 400;
   letter-spacing: 0.09em; text-transform: uppercase; transition: var(--ease);
@@ -600,7 +600,7 @@ footer {
         <div class="gallery-label">Création sur-mesure</div>
       </div>
       <div class="gallery-item">
-        <img src="EF_2.jpg" alt="Composition douce">
+        <img src="EF_8.jpg" alt="Composition douce">
         <div class="gallery-label">Douceur et élégance</div>
       </div>
       <div class="gallery-item">
@@ -795,9 +795,17 @@ footer {
           01 43 24 21 64
         </a>
       </div>
-      <div class="map-wrap">
-        <img src="EF_7.jpg" alt="Intérieur boutique Eve Fleurs" style="width:100%; height:100%; object-fit:cover;">
+      
+      <!-- AJOUT : Espace droit avec la photo de l'intérieur + L'iframe Google Maps "tout en bas" de la section -->
+      <div style="display: flex; flex-direction: column; gap: 2rem;">
+        <div class="map-wrap">
+          <img src="EF_4.jpg" alt="Intérieur boutique Eve Fleurs" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://maps.google.com/maps?q=Eve+Fleurs,126+Av.+du+G%C3%A9n%C3%A9ral+de+Gaulle,94170+Le+Perreux-sur-Marne&output=embed" style="border:none; width:100%; height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte Google Maps Eve Fleurs"></iframe>
+        </div>
       </div>
+      
     </div>
   </section>
 
